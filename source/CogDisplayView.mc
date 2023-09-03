@@ -187,11 +187,11 @@ class CogDisplayView extends Ui.DataField {
 	    	for (var j = 0; j<11; j++){
 	    		var r = ringRatios[i][j];
 	    		
-	    		var x = (Math.log(r, logbase) - Math.log(small,logbase))/(Math.log(large,logbase)-Math.log(small,logbase)) * w + x1;
+	    		var x2 = (Math.log(r, logbase) - Math.log(small,logbase))/(Math.log(large,logbase)-Math.log(small,logbase)) * w + x1;
 	    			
-	    		if ( x<padding )  { x = padding; }
-	    		if ( x>padding+w-1 ){ x = padding+w-1; }
-	    		dc.drawLine(x, padding+i*(h/nChainRings), x, padding+(i+1)*(h/nChainRings));
+	    		if ( x2<padding )  { x2 = padding; }
+	    		if ( x2>padding+w-1 ){ x2 = padding+w-1; }
+	    		dc.drawLine(x2, padding+i*(h/nChainRings), x2, padding+(i+1)*(h/nChainRings));
 	    	}
     	}
     	
